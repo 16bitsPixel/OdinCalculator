@@ -52,7 +52,10 @@ let exprDisplay = document.querySelector(".expression");
     button.addEventListener("click", () => {
         if (operatorSet == false) {
             if (button.className == "number") {
-                if (button.id == ".") {
+                if (num1.length == 8) {
+                    // nothing happens
+                }
+                else if (button.id == ".") {
                     if (decimalSet1 == false) {
                         num1 += button.id;
                         decimalSet1 = true;
@@ -95,7 +98,10 @@ let exprDisplay = document.querySelector(".expression");
         }
         else {
             if (button.className == "number") {
-                if (button.id == ".") {
+                if (num2.length == 8) {
+                    // nothing happens
+                }
+                else if (button.id == ".") {
                     if (decimalSet2 == false) {
                         num2 += button.id;
                         decimalSet2 = true;
