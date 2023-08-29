@@ -7,6 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 75vh;
 }
 
 .background {
@@ -36,11 +37,40 @@
     grid-gap: 0.5rem;
     padding: 1rem;
     background-color: #003585;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
 }
 
 .number, .operator {
-    border-radius: 100%;
     font-size: 1.5rem;
     font-weight: 700;
     padding: 1rem 0;
+}
+
+.number {
+    background-color: white;
+}
+
+.operator {
+    background-color: #8ccfe0;
+}
+
+#clear {
+    background-color: #535960
+}
+
+#delete {
+    background-color: #9fa9b8;
+}
+
+#sign {
+    background-color: #3873cd;
+}
+
+#equals {
+    background-color: #00ffff;
+}
+
+[id='0'] {
+    grid-column: span 2;
 }
